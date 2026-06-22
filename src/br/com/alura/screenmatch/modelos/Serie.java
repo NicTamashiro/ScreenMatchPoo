@@ -1,6 +1,6 @@
 package br.com.alura.screenmatch.modelos;
 
-public class Serie extends Filme {
+public class Serie extends Titulo {
     private boolean ativa;
     private int episodiosPorTemporada;
     private int minutosPorEpisodio;
