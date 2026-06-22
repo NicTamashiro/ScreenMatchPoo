@@ -1,0 +1,27 @@
+import br.com.alura.screenmatch.modelos.Filme;
+import br.com.alura.screenmatch.modelos.Serie;
+
+public class Main {
+    public static void main(String[] args) {
+        Filme meuFilme = new Filme();
+        meuFilme.setNome("O poderoso chefao");
+        meuFilme.setAnoDeLancamento(1970);
+        meuFilme.setDuracaoEmMinutos(180);
+        System.out.println("Duracao do filme: " + meuFilme.getDuracaoEmMinutos());
+
+        meuFilme.exibeFichaTecnica();
+        meuFilme.avalia(8);
+        meuFilme.avalia(5);
+        meuFilme.avalia(10);
+        System.out.println("Media de avaliacoes do filme: " + meuFilme.pegaMedia());
+
+        Serie minhaSerie = new Serie();
+        minhaSerie.setNome("Lost");
+        minhaSerie.setAnoDeLancamento(2000);
+        minhaSerie.exibeFichaTecnica();
+        minhaSerie.setTemporadas(10);
+        minhaSerie.setEpisodiosPorTemporada(10);
+        minhaSerie.setMinutosPorEpisodio(50);
+        System.out.println("Duracao para maratonar Lost: " + minhaSerie.getDuracaoEmMinutos());
+    }
+}
