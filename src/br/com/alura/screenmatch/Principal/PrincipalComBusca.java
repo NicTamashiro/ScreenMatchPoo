@@ -20,7 +20,7 @@ public class PrincipalComBusca {
         System.out.println("Digite um filme para busca: ");
         String busca = sc.nextLine();
 
-        String endereco = "https://www.omdbapi.com/?t=" + busca + "&apikey=2f65f5b5";
+        String endereco = "https://www.omdbapi.com/?t=" + busca.replace(" ", "+") + "&apikey=2f65f5b5";
 
         try {
 
